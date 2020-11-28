@@ -3,7 +3,7 @@ layout: post
 title:  "자바 파일 shell로 upload 하는 방법 - MAC"
 date:   2020-11-28 19:10:13 +0800
 categories: Study
-tags: java javafile shell
+tags: [java, javafile, shell]
 ---
 
 
