@@ -65,7 +65,7 @@ tags: [java, javafile, shell]
      javac -cp "." Program.java
      ```
 
-     * cp : class path
+     * cp : class path - 클래스를 찾기 위한 경로.
      * "." : 현재 디렉토리
 
 
@@ -226,3 +226,10 @@ tags: [java, javafile, shell]
    ```
 
    
+
+
+
+### path?
+
+* 환경 변수.
+* 프로세스가 컴퓨터에서 동작하는 방식에 영향을 미치는, 동적인 값들의 모임.
