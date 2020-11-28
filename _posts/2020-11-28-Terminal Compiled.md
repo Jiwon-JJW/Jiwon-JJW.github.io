@@ -3,7 +3,7 @@ layout: post
 title:  "자바 파일 shell로 upload 하는 방법 - MAC"
 date:   2020-11-28 19:10:13 +0800
 categories: Study
-tags: [java, javafile, shell]
+tags: [java, javafile, shell, 생활코딩]
 ---
 
 
@@ -233,3 +233,8 @@ tags: [java, javafile, shell]
 
 * 환경 변수.
 * 프로세스가 컴퓨터에서 동작하는 방식에 영향을 미치는, 동적인 값들의 모임.
+
+
+
+> 출처:
+> 부스트코스 - 쉽게 배우는 자바(java) _ 생활코딩
