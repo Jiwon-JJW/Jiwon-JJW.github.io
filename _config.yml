@@ -3,7 +3,7 @@ author: Jiwon-JJW # Your name
 email: znfhdnal1@gmail.com # your email shown in the footer
 url: https://jiwon-jjw.github.io/ # this is your site's root address.
 description: > # this means to ignore newlines until "show_excerpts:"
-  A clean and minimalist theme for Jekyll.
+  정리한 것들을 올려요
 favicon: "./favicon.ico" # set the favicon of the site 
 
 show_excerpts: false # set to true to show excerpts on the homepage
