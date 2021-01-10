@@ -1,17 +1,23 @@
-PATH
-  remote: .
-  specs:
-    jekyll-theme-persephone (0.2.6)
-
 GEM
   remote: https://rubygems.org/
   specs:
+    ffi (1.14.2)
+    jekyll-theme-persephone (0.2.6)
+    jekyll-watch (2.2.1)
+      listen (~> 3.0)
+    listen (3.4.0)
+      rb-fsevent (~> 0.10, >= 0.10.3)
+      rb-inotify (~> 0.9, >= 0.9.10)
+    rb-fsevent (0.10.4)
+    rb-inotify (0.10.1)
+      ffi (~> 1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll-theme-persephone!
+  jekyll-theme-persephone
+  jekyll-watch
 
 BUNDLED WITH
    2.1.4
