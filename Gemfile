@@ -2,3 +2,4 @@
 
 source "https://rubygems.org"
 gem "jekyll-theme-persephone"
+gem "jekyll-watch"
