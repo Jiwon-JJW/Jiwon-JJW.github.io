@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
 source "https://rubygems.org"
-gem "jekyll-theme-persephone"
-gem "jekyll-watch"
+gemspec
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?

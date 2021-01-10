@@ -1,78 +1,50 @@
- title: Study Blog
- description: Study
- email: znfhdnal1@gmail.com
+title: Moving # The title of the blog
+author: Your Name # Your name 
+email: your-email@domain.com # your email shown in the footer
+url: http://huangyz.name/moving/ # this is your site's root address.
+description: > # this means to ignore newlines until "show_excerpts:"
+  A clean and minimalist theme for Jekyll.
+favicon: "./favicon.ico" # set the favicon of the site 
 
-# author: Your name #  Default is your site title.
+show_excerpts: false # set to true to show excerpts on the homepage
+  
+# Moving date format
+# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+moving:
+  avatar_url: "https://i.loli.net/2019/08/26/JzCLhDWPEybZr2T.jpg" # avatar in about page
+  about_you: a short description about you. # short description about you in about page
+  date_format: "%b %d" # date format of posts in home page
+  back_to: "Home" # In the post page, you have a back button above the title, you can custom the text by yourself.
 
-# # Your social accounts.
- social:
-   github: Jiwon_JJW
-#   twitter: twitter_username
-#   facebook: facebook_username
-#   instagram: instagram_username
-#   linkedin: linkedin_username
-#   weibo: weibo_username
+  # generate social links in about page.
+  social_links:
+    # twitter: 
+    github:  huangyz0918
+    rss: RSS
+    # dribbble: 
+    facebook: huangyz0918
+    # flickr:   
+    # instagram: 
+    linkedin: yizheng-huang
+    # pinterest: 
+    # youtube: 
+    # youtube_channel: 
+    # youtube_channel_name: 
+    # telegram: 
+    # googleplus: 
+    # microdotblog: 
+    # reddit: 
 
-# # Theme Settings
-theme: jekyll-theme-persephone
+    # Mastodon instances
+    # mastodon:
+    # - username: 
+    #   instance: 
+    # - username: 
+    #   instance: 
 
- # Your site's logo. Will be shown on the left top of your page.
- logo: /img/logo.svg
-# # If the images of our blog are stored in an external cloud. You can use the jekyll-img-prefix plugin and set your images' base URL here.
- img_prefix: https://your-img-cdn.com
-# # The RSS link of your blog.
- rss: "/feed.xml"
+# Build settings
+theme: moving # note, please use huangyz0918/moving if you want to publish to Github Pages.
 
-# # The followings are settings for displays of your blog.
- theme_setting:
-   # The slides count in the slides layout. Default is 4.
-#   slides_count: 5
-   # The ← back URL on the top of your post page. Default is your site's home page.
-   blog_page: https://jiwon-jjw.github.io/blog/index.md
-   # "blog/index.md"
-   # The URL on your name on the bottom of your post and page. Default is your site's home page.
-   about_page: "about.md"
-   #  The URL of the menu icon(which has three black lines). Will be shown on the slides/book/chapter layouts It won't be shown if blank.
-   archive_page: https://velog.io/@znfhdnal1
-   # The nav links on the top right of home/page/post/blog layout. You can set a local page(by setting a layout's path) or and external link ( both title and url are required) here.
-   nav_pages:
-     - home
-     - post
-       title: post
-       url: "https://your-external-link.com"
-   # Every default value in the following settings is false. You can set them globally here or separately in a single post/page/chapter.
-   code: true # Code highlight.
-   math: true # Mathjax
-   mermaid: true # Mermaid
-   #  Locales of this theme.
-   lang:
-     category_all: All # The first tag in the categories bar on the blog layout page. By clicking it all of your posts will be shown. Default is 'All'.
-     blog_title: Blog # The text of ← back url on the top of the post layout.  Default is 'Home'.
-     # The locales of the comment controls.
-     comment:
-       user: "user"
-       email: "email"
-       url: "url"
-       message: "내용을 작성해주세요"
-       reply: "reply"
-
-# head_code: |
-#   <!-- Extra codes in the head of your site pages. You can add your Google Analysis codes here! -->
-
-# # The settings of comments.
- comment:
-   # You should set it to enable comment
-   enabled: true
-   # Your comment provider
-   provider: disqus # static/disqus
-   # If provider == disqus
-   disqus: starve-1
-     name: starve-1
-   # Or provider == static
-   static:
-     # Your static comment url.
-     postUrl:  https://api.staticman.net/v2/connect/GITHUB-USERNAME/GITHUB-REPOSITORY
- # The settings of local smileys used in static comments. The jekyll-smiley plugin is required.
-# smiley:
-#   enabled: true
-#   dir: img/smileys
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag

@@ -1,42 +1,50 @@
 ---
 layout: default
 ---
-{%- include header.html -%}
-<main class="post__wrapper">
-  {%- include header_nav.html -%}
-  <div class="post__top_navs clearfix">
-    <nav class="post__archive_path">
-      {%- assign blog_page_path = site.theme_setting.blog_page | default: "index.md" %}
-      {%- assign blog_page = site.pages | where: "path", blog_page_path | first -%}
-      <a href="{{ blog_page.url | relative_url }}" id="archiveBtn">
-        <div class="post__archive_icon">
-          <svg width="40" height="40">
-            <circle class="circle-progress" r="18" cy="20" cx="20"  stroke-linejoin="round" stroke-linecap="round" />
-          </svg>
-          <span class="post__archive_icon"></span>
-        </div>
-        {{ site.theme_setting.lang.blog_title | default: site.title }}
+
+<article
+  class="post h-entry"
+  itemscope
+  itemtype="http://schema.org/BlogPosting"
+>
+  <head>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <title>{{ page.title }}</title>
+  </head>
+  <header class="post-header">
+    <div class="post-back">
+      <a class="black-link" href="{{ site.url | relative_url }}">
+        ← {{ site.moving.back_to }}
       </a>
-    </nav>
-  </div>
-  <article class="post">
-    <header class="post__header">
-      <h1 class="post__title">{{ page.title | escape }}</h1>
-      <div class="post__meta">
-        <time>{{ page.date | date: "%Y-%m-%d %H:%M" }}</time>
-      </div>
-    </header>
-    <div class="post__content content">
-      {{ content | toc | img_prefix }}
     </div>
-  </article>
-  {%- if site.comment.enabled -%}
-   include comments.html 
-  {%- else -%}
-  {% include contact.html -%} 
-  {%- endif -%}
-</main>
-{%- if site.theme_setting.code or page.code -%}
-  <script>hljs.initHighlightingOnLoad();</script>
-{%- endif -%}
-{%- include footer.html -%}
+
+    <h1 class="post-title p-name" itemprop="name headline">
+      {{ page.title | escape }}
+    </h1>
+    <p class="post-meta">
+      <time
+        class="dt-published"
+        datetime="{{ page.date | date_to_xmlschema }}"
+        itemprop="datePublished"
+      >
+        {%- assign date_format = "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
+      {%- if page.author -%} •
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person"
+        ><span class="p-author h-card" itemprop="name">{{
+          page.author | escape
+        }}</span></span
+      >
+      {%- endif -%}
+    </p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>
