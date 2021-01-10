@@ -67,7 +67,7 @@ theme: jekyll-theme-persephone
    provider: disqus # static/disqus
    # If provider == disqus
    disqus:
-     name: website_name
+     name: starve-1
    # Or provider == static
    static:
      # Your static comment url.
