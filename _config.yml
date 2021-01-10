@@ -28,7 +28,7 @@ theme: jekyll-theme-persephone
    # The slides count in the slides layout. Default is 4.
 #   slides_count: 5
    # The ← back URL on the top of your post page. Default is your site's home page.
-   blog_page: https://jiwon-jjw.github.io/
+   blog_page: https://jiwon-jjw.github.io/blog/index.md
    # "blog/index.md"
    # The URL on your name on the bottom of your post and page. Default is your site's home page.
    about_page: "about.md"
