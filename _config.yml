@@ -66,13 +66,13 @@ theme: jekyll-theme-persephone
    # Your comment provider
    provider: disqus # static/disqus
    # If provider == disqus
-   disqus:
+   disqus: starve-1
      name: starve-1
    # Or provider == static
    static:
      # Your static comment url.
      postUrl:  https://api.staticman.net/v2/connect/GITHUB-USERNAME/GITHUB-REPOSITORY
  # The settings of local smileys used in static comments. The jekyll-smiley plugin is required.
- smiley:
-   enabled: true
-   dir: img/smileys
+# smiley:
+#   enabled: true
+#   dir: img/smileys
