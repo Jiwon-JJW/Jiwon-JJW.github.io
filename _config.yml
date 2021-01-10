@@ -17,11 +17,11 @@
 theme: jekyll-theme-persephone
 
  # Your site's logo. Will be shown on the left top of your page.
-# logo: /img/logo.svg
+ logo: /img/logo.svg
 # # If the images of our blog are stored in an external cloud. You can use the jekyll-img-prefix plugin and set your images' base URL here.
-# img_prefix: https://your-img-cdn.com
+ img_prefix: https://your-img-cdn.com
 # # The RSS link of your blog.
-# rss: "/feed.xml"
+ rss: "/feed.xml"
 
 # # The followings are settings for displays of your blog.
  theme_setting:
@@ -36,7 +36,7 @@ theme: jekyll-theme-persephone
    # The nav links on the top right of home/page/post/blog layout. You can set a local page(by setting a layout's path) or and external link ( both title and url are required) here.
    nav_pages:
      - "about.md"
-     -
+     - "test"
        title: "External Link Title"
        url: "https://your-external-link.com"
    # Every default value in the following settings is false. You can set them globally here or separately in a single post/page/chapter.
